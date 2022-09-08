@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>function log() {
+  console.log("hello world");
+  var header = document.getElementById("header");
+  header.textContent = "My notebook";
+}
+
+function add() {
+  var ul = document.getElementById("list");
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode(document.getElementById("textareas").value));
+  ul.appendChild(li);
+}</script>
+    <h1 id="header">Hello World!</h1>
+    <textarea id="textareas"></textarea>
+    <button id="my-button" onclick="log()">Click me!</button>
+    <button id="add-data" onclick="add()">Add a thing to the list!</button>
+    <ul id="list"></ul>
+  </body>
+</html>
